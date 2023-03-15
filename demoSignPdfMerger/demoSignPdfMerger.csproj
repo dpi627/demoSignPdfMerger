@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="assets\1.pdf" />
+    <None Include="assets\2.pdf" />
+    <None Include="assets\3.pdf" />
+    <None Include="assets\Brian.pfx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

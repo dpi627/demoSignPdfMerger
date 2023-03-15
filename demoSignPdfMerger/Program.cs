@@ -56,9 +56,8 @@ namespace demoSignPdfMerger
             Document outputDocument = new Document(outputFile);
             using (PdfFileSignature signature = new PdfFileSignature(outputDocument))
             {
-                PKCS7 pkcs = new PKCS7(signFile, signPassword); // Use PKCS7/PKCS7Detached objects
+                PKCS7 pkcs = new PKCS7(signFile, signPassword);
                 signature.Sign(1, true, new System.Drawing.Rectangle(300, 100, 400, 200), pkcs);
-                // Save output PDF file
                 signature.Save(outputFile);
             }
             outputDocument.Dispose();
